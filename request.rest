@@ -1,0 +1,46 @@
+POST http://localhost:3000/users 
+Content-Type: application/json
+
+{
+    "username": "iloveyou",
+    "password": "tes1234",
+    "confirmPassword": "tes123"
+}
+
+###
+GET http://localhost:3000/users 
+
+###
+GET http://localhost:3000/users/10 
+
+###
+PUT http://localhost:3000/users/9 
+Content-Type: application/json
+
+{
+    "password": "tes12"
+}
+
+###
+DELETE http://localhost:3000/users/5
+
+###
+POST http://localhost:3000/users/10/profiles 
+Content-Type: application/json
+
+{
+    "firstname": "Tano",
+    "lastname": "Budi",
+    "age": 21,
+    "dob": "01-02-2000"
+}
+
+
+###
+POST http://localhost:3000/users/10/posts 
+Content-Type: application/json
+
+{
+    "title": "program12",
+    "description": "i love programming!!!"
+}
